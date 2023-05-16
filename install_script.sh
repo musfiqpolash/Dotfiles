@@ -70,16 +70,6 @@ sudo apt install -y micro
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
 
-mkdir ~/.config
-
-ln -s $HOME/Dotfiles/i3 $HOME/.config
-ln -s $HOME/Dotfiles/kitty $HOME/.config
-ln -s $HOME/Dotfiles/polybar $HOME/.config
-ln -s $HOME/Dotfiles/scripts $HOME/.config
-ln -s $HOME/Dotfiles/alacritty $HOME/.config
-ln -s $HOME/Dotfiles/bspwm $HOME/.config
-ln -s $HOME/Dotfiles/sxhkd $HOME/.config
-ln -s $HOME/Dotfiles/.bash* $HOME/
 #mkdir -p ~/.config/{bspwm,sxhkd,dunst}
 
 #install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
