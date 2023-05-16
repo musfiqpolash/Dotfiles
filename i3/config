@@ -134,11 +134,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps inner 5px
+#gaps inner 5px
 
-gaps outer 5px
+#gaps outer 5px
 
-smart_gaps on
+#smart_gaps on
 
 #window rules
 for_window [ title="PowerMenu" ] floating enable
