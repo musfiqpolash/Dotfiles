@@ -140,6 +140,10 @@ alias fgrep='fgrep --color=auto'
 alias gc='git clone'
 alias emacs="emacsclient -c -a 'emacs'"
 
+alias ins="sudo apt install"
+alias upd="sudo apt update"
+alias upg="sudo apt upgrade"
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -184,6 +188,8 @@ fi
 
 
 
-source $HOME/Xilinx/Vivado/2022.2/settings64.sh
+if [ -f $HOME/Xilinx/Vivado/2022.2/settings64.sh ]; then
+	source $HOME/Xilinx/Vivado/2022.2/settings64.sh
+fi
 
 eval "$(starship init bash)"
