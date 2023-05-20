@@ -3,7 +3,7 @@
 # A dmenu wrapper script for system functions.
 
 cmds="\
-󱎜  lock		betterlockscreen -l dim
+󱎜  lock		i3lock --nofork
 󰁬  logout	i3-msg exit
 󰻹  reboot	systemctl reboot
 󰧵  shutdown	systemctl poweroff

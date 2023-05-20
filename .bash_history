@@ -345,3 +345,260 @@ cd i3
 rm i3 
 rm kitty 
 ls
+sudo apt update
+sudo apt install git
+git clone https://github.com/musfiqpolash/Dotfiles
+cd Dotfiles/
+ls
+cp install_script.sh ../
+cd
+ls
+nano install_script.sh 
+sudo ./install_script.sh 
+ls
+cd Dotfiles/
+ls
+./ln_files.sh 
+cd
+ls
+ls -al
+rm install_script.sh 
+xdg-user-dirs-update 
+ls
+sudo reboot
+.config/
+ls
+scripts
+ls
+../polybar
+ls
+./launch.sh 
+polybar
+sudo apt install polybar
+Dotfiles/
+ls
+bspwm/
+ls
+vim bspwmrc 
+neofetch 
+systemctl logout
+./Dotfiles/scripts/powermenu.sh 
+vim Dotfiles/sxhkd/sxhkdrc 
+cls
+vim Dotfiles/.bashrc 
+cls
+apt search nordic
+apt search rowaita
+cd .themes/
+ex Nordic-darker.tar.xz 
+ls
+../.icons/
+ex Rowaita-icon-theme.tar.xz 
+ls
+Rowaita-icon-theme/
+ls
+mv -r Rowaita-Default-Dark ../
+mv Rowaita-Default-Dark ../
+..
+ls
+.local/share/
+ls
+mkdir fonts
+fonts
+ex JetBrainsMono.zip 
+sudo apt install curl
+curl -sS https://starship.rs/install.sh | sh
+la
+sudo apt install python3-pip
+pip3 install pyserial
+python3
+cls
+sudo vim /etc/udev/rules.d/99-arduino.rules
+pip3 install pyfirmata
+cat .bashrc 
+python3
+sudo apt purge xterm 
+pip3 install wxpython
+sudo apt install dpkg-dev build-essential python3-dev reeglut3-dev libgl1-mesa-dev libglu1-mesa-dev libgstreamer-plugins-base1.0-dev libgtk-3-dev libjpeg-dev libnotify-dev ibpng-dev libsdl2-dev libsm-dev libtiff-dev libwebkit2gtk-4.0-dev libxtst-dev libgtk2.0-dev libwebkitgtk-dev
+sudo apt install dpkg-dev build-essential python3-dev freeglut3-dev libgl1-mesa-dev libglu1-mesa-dev libgstreamer-plugins-base1.0-dev libgtk-3-dev libjpeg-dev libnotify-dev libpng-dev libsdl2-dev libsm-dev libtiff-dev libwebkit2gtk-4.0-dev libxtst-dev
+pip3 install wxpython
+pip3 install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/debian-11/ wxPython
+apt search i3
+apt search "i3"
+apt search "i3-wm"
+apt search "i3-ipc"
+apt search "i3-work"
+sudo apt install i3
+sudo apt install vlc
+sudo apt autoremove 
+vim Dotfiles/i3/config 
+neofetch 
+sudo apt install emacs
+sudo apt install fzf ripgrep fd-find 
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.config/emacs
+~/.config/emacs/bin/doom install
+modprobe kvm
+apt search "modprobe"
+sudo apt install -y linux-headers-amd64 
+lscpu | grep Virtualization
+sudo apt update
+sudo apt install qemu-kvm
+sudo apt install libvirt-daemon-system libvirt-clients 
+sudo adduser $USER kvm
+virsh list --all
+sudo apt install qt5-graphicaleffects qt5-quickcontrols2 qt5-svg sddm
+sudo apt install install gstreamer1.0-libav qml-module-qtmultimedia libqt5multimedia5-plugins
+sudo apt install gstreamer1.0-libav qml-module-qtmultimedia libqt5multimedia5-plugins
+groups 
+sudo apt install virt-manager 
+groups 
+sudo adduser $USER libvirt
+groups 
+Downloads/
+dpkg -i code_1.78.2-1683731010_amd64.deb 
+sudo dpkg -i code_1.78.2-1683731010_amd64.deb 
+doom sync
+xprop
+vim Dotfiles/polybar/config 
+./Dotfiles/polybar/launch.sh 
+vim Dotfiles/polybar/config 
+./Dotfiles/polybar/launch.sh 
+tasksel
+sudo tasksel
+sudo apt update
+sudo tasksel
+sudo apt autoremove 
+sudo tasksel
+sudo apt-get --purge autoremove lxde
+sudo apt-get --purge autoremove lxqt
+cls
+git clone https://github.com/stuomas/delicious-sddm-theme.git
+cd delicious-sddm-theme/
+./install.sh 
+sudo apt install libqt5qml-graphicaleffects
+apt-file search 'qml/QtGraphicalEffects/qmldir'
+apt search 'qml/QtGraphicalEffects/qmldir
+sudo apt install qml-module-qtgraphicaleffects
+sudo apt install qtquickcontrols-opensource-src
+sudo apt install qml-module-qtquick-controls2
+sudo apt install qml-module-qtquick-controls
+sudo apt-get --purge autoremove lxde*
+sudo apt-get --purge autoremove lxqt*
+sudo apt-get --purge autoremove openbox 
+ls
+chmod +x power.sh 
+ls
+sudo apt install cmake
+ls
+sudo apt install libtool
+sudo apt install libvterm
+sudo apt install libvterm-dev 
+sudo apt install libvterm-bin 
+sudo apt install inkscape x11-apps
+.icons/
+ex capitaine-cursors-r4.tar.gz 
+la
+ls
+ex material-cursors.tar.gz 
+ls
+mc
+.icons/
+la
+ex material-light-cursors.tar.gz 
+ls
+rm *.tar.*
+la
+sudo apt install mc
+mc
+edit Dotfiles/.bashrc 
+clear
+xdg-open 
+cat /usr/lib/mc/ext.d/image.sh 
+Pictures/background/
+xdg-open wp10.jpg 
+sudo apt install libatk1.0-0
+sudo apt install libatk-adaptor libgail-common
+xdg-open wp10.jpg 
+sudo apt install gtk2-engines gtk-murrine-engine gtk-equinox-engine
+sudo apt install gtk2-engines
+spt search "murrine-engine"
+apt search "murrine-engine"
+apt search "murrine"
+man xdg-open 
+source ~/.bashrc 
+ins gtk2-engines-murrine
+xdg-open wp10.jpg 
+git clone https://github.com/Boruch-Baum/morc_menu.git
+morc_menu/
+sudo make install 
+morc_menu 
+cd
+rm -r morc_menu/
+rm -rf morc_menu/
+la
+git clone https://github.com/bartobri/bmenu.git
+cd bmenu/
+make
+sudo make install 
+bmenu 
+..
+rm -rf bmenu/
+xprop 
+xdg-mime 
+cls
+mc
+sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt remove docker docker-engine docker.io containerd runc
+upd
+ins apt-transport-https ca-certificates curl gnupg2 software-properties-common
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list
+sudo apt update 
+ins docker-ce docker-ce-cli containerd.io
+docker -v
+sudo systemctl status docker
+ins docker-compose-plugin
+sudo usermod -aG docker $USER
+groups
+newgrp docker
+docker run hello-world
+docker image
+docker 
+docker images
+sudo apt install flatpak
+flatpak install flathub com.bitwarden.desktop
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub com.bitwarden.desktop
+groups
+xprop
+Downloads/
+sudo dpkg -i docker-desktop-4.19.0-amd64.deb 
+sudo apt install ./docker-desktop-4.19.0-amd64.deb 
+apt --fix-broken install
+sudo apt --fix-broken install
+sudo apt install ./docker-desktop-4.19.0-amd64.deb 
+sudo vim /etc/hosts
+cls 
+systemctl --user enable docker-desktop
+systemctl --user start docker-desktop
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+xprop 
+gpg --generate-key
+pass init 
+pass init 0EDDBA5A49E519AB7F432D191FB59ACB5325693B 
+cls
+synaptic
+synaptics
+sudo synaptic
+sudo tasksel 
+sudo apt install zsh fish
+fish
+zsh
+cls
+scrot 
+man scrot
+sudo apt purge geane
+sudo apt purge geany
+python3 main.py 
