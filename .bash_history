@@ -602,3 +602,161 @@ man scrot
 sudo apt purge geane
 sudo apt purge geany
 python3 main.py 
+ga
+git status
+git add .bashrc 
+git status
+git commit -m "added apt aliases"
+git config --global --edit 
+git commit --amend --reset-author 
+git add i3/config 
+git commit -m "window rules scratchpad"
+git status 
+git add polybar/config 
+git commit -m "removed and added modules"
+git status 
+git add -A
+git commit -m "changed bunch of things"
+git push origin main 
+exit
+Dotfiles/
+git status 
+git push origin main 
+type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null && sudo apt update && sudo apt install gh -y
+gh auth login 
+Dotfiles/
+git push origin main
+gh auth login 
+sudo apt install curl lsb-release wget
+curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
+deb-get list
+deb-get list --raw
+sudo deb-get update
+deb-get list --raw
+deb-get list
+deb-get list --raw
+deb-get install github-desktop
+node blimk.js 
+node blink.js 
+node fade.js 
+code .
+sudo synaptic
+deb-get list --raw 
+deb-get install sublime-text 
+mc
+la
+mv arduino-ide_2.1.0_Linux_64bit.AppImage arduino-ide.AppImage 
+chmod +x arduino-ide.AppImage 
+./arduino-ide.AppImage 
+la
+Projects/Node/ArduinoControl/
+cls
+node app.js 
+node fade.js 
+node app.js 
+node fade.js 
+git add -A
+neofetch 
+node -v
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
+la
+sudo curl -fsSL https://deb.nodesource.com/setup_20.x | bash - &&apt install nodejs
+sudo curl -fsSL https://deb.nodesource.com/setup_20.x | sudo bash - && sudo apt install nodejs
+sudo apt autoremove 
+node -v
+Projects/
+ls
+mkdir Node
+node 
+node/
+Node/
+mkdir ArduinoControl
+ArduinoControl/
+npm install johny-five
+npm install -g npm@9.6.7
+sudo npm install -g npm@9.6.7
+sudo npm install johny-five
+sudo npm install johnny-five
+la
+npm install express
+sudo npm install express
+sudo npm install socket.io
+sudo npm install serialport
+code .
+cd
+upd
+upg
+ssh-keygen -t ed25519 -C "musfiqpolash@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+cls
+upd
+apt list --upgradable 
+upg
+code .
+flatpak list 
+deb-get list --raw 
+deb-get update 
+pwd
+deb-get list --raw 
+npm install
+nove fade.js 
+node fade.js 
+npm run fade.js 
+npm run
+npm run test
+npm install npm-watch
+npm watch
+npm run watch
+npm install -g nodemon
+sudo npm install -g nodemon
+npm install nodemon
+npm install
+npm run dev
+npm install
+npm run dev
+upd
+apt list --upgradable 
+upg
+la
+Projects/Node/ArduinoControl
+node for_testing.js 
+npm install
+node for_testing.js 
+nodemon for_testing.js 
+udev
+cd ScreenShot/
+pwd
+ins flameshot
+man flameshot 
+flameshot gui
+Projects/Node/ArduinoControl
+nodemon for_testing.js 
+npm run dev
+node for_testing.js 
+npm run dev
+lsusb
+udevadm info -a -p $(udevadm info -q path -n /dev/ttyACM0)
+sudo vim /etc/udev/rules.d/99-arduino.rules 
+sudo vim /etc/udev/rules.d/49-custom.rules 
+ls /dev/tty*
+ls /dev/serial/by-path/
+ls /dev/serial/by-id
+cd Projects/
+cd Node/
+ls
+mkdir pmodController
+cd pmodController/
+npm init
+ls
+mkdir src public
+ls
+touch src/app.js public/index.html
+l.
+ls
+code .
+ls
+npm install
+npm run dev

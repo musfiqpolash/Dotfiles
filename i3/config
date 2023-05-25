@@ -11,6 +11,7 @@ exec --no-startup-id xrandr --output HDMI-1 --auto --above eDP-1
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id volumeicon
+exec --no-startup-id flameshot
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id picom --backend glx --vsync
 # exec --no-startup-id ~/.fehbg
@@ -197,4 +198,7 @@ bindsym $mod+x exec $HOME/.config/scripts/powermenu.sh
 bindsym $mod+p exec ~/.config/polybar/launch.sh
 bindsym $mod+z exec emacsclient -c -a 'emacs'
 bindsym $mod+l exec --no-startup-id i3lock --nofork -i /home/polash/Pictures/Lock/wp7.png -t
-
+bindsym $mod+shift+a exec --no-startup-id /home/polash/Applications/arduino-ide.AppImage
+bindsym $mod+shift+v exec --no-startup-id code
+#bindsym --release Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures/ScreenShot/'
+bindsym --release Print exec --no-startup-id flameshot gui
