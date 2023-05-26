@@ -192,4 +192,8 @@ if [ -f $HOME/Xilinx/Vivado/2022.2/settings64.sh ]; then
 	source $HOME/Xilinx/Vivado/2022.2/settings64.sh
 fi
 
+if [ -e /home/polash/.nix-profile/etc/profile.d/nix.sh ]; then
+  . /home/polash/.nix-profile/etc/profile.d/nix.sh;
+fi # added by Nix installer
+
 eval "$(starship init bash)"
