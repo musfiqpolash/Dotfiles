@@ -17,7 +17,7 @@ exec --no-startup-id picom --backend glx --vsync
 # exec --no-startup-id ~/.fehbg
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id /usr/bin/emacs --daemon
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -202,3 +202,6 @@ bindsym $mod+shift+a exec --no-startup-id /home/polash/Applications/arduino-ide.
 bindsym $mod+shift+v exec --no-startup-id code
 #bindsym --release Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures/ScreenShot/'
 bindsym --release Print exec --no-startup-id flameshot gui
+bar {
+  status_command i3blocks
+}
