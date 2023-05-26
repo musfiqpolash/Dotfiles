@@ -8,7 +8,7 @@ nitrogen --restore &
 nm-applet &
 volumeicon &
 blueman-applet &
-$HOME/.config/polybar/launch.sh
+# $HOME/.config/polybar/launch.sh
 
 bspc monitor 'eDP-1' -d I II III IV V
 
