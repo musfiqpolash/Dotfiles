@@ -14,7 +14,7 @@ sudo apt install -y build-essential
 sudo apt install -y intel-microcode
 
 # Network File Tools/System Events
-sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends xfce4-power-manager
+sudo apt install -y dialog avahi-daemon acpi acpid gvfs-backends
 
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
@@ -43,7 +43,7 @@ sudo apt install -y firefox-esr
 # Desktop background browser/handler
 # feh --bg-fill /path/to/directory
 sudo apt install -y nitrogen
-sudo apt install -y feh
+#sudo apt install -y feh
 
 # Fonts and icons for now
 sudo apt install -y fonts-firacode fonts-liberation2 fonts-ubuntu papirus-icon-theme fonts-cascadia-code
@@ -54,18 +54,19 @@ sudo apt install -y fonts-firacode fonts-liberation2 fonts-ubuntu papirus-icon-t
 sudo apt install -y exa
 
 # Printing and bluetooth (if needed)
-sudo apt install -y cups system-config-printer simple-scan
+# sudo apt install -y cups system-config-printer simple-scan
 sudo apt install -y bluez blueman
 
-sudo systemctl enable cups
+# sudo systemctl enable cups
 sudo systemctl enable bluetooth
 
 # Packages needed for bspwm installation
-sudo apt install -y bspwm dmenu sxhkd picom numlockx rofi dunst libnotify-bin unzip geany scrot
+sudo apt install -y polybar flameshot
+sudo apt install -y bspwm dmenu sxhkd picom numlockx rofi dunst libnotify-bin unzip
 
 # Command line text editor -- nano preinstalled
-sudo apt install -y micro
-# sudo apt install -y vim
+#sudo apt install -y micro
+sudo apt install -y vim
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
@@ -78,7 +79,8 @@ xdg-user-dirs-update
 # Install Lightdm Console Display Manager
 #sudo apt install -y lightdm lightdm-gtk-greeter-settings
 #sudo systemctl enable lightdm
-
+sudo apt install -y sddm
+sudo systemctl enable sddm
 
 ########################################################
 # End of script for default config
