@@ -132,3 +132,15 @@ alt + b
 
 alt + f
 	pcmanfm
+alt + p
+	$HOME/.config/polybar/launch.sh
+
+#screen lock
+super + l
+	xset s activate
+
+alt + v
+	code
+
+super + b
+	brave-browser

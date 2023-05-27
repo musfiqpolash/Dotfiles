@@ -143,6 +143,8 @@ alias emacs="emacsclient -c -a 'emacs'"
 alias ins="sudo apt install"
 alias upd="sudo apt update"
 alias upg="sudo apt upgrade"
+alias reboot="systemctl reboot"
+alias shutdown="systemctl poweroff"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -185,7 +187,6 @@ fi
 if [ -d "/var/lib/flatpak/exports/bin/" ] ;
   then PATH="/var/lib/flatpak/exports/bin/:$PATH"
 fi
-
 
 
 if [ -f $HOME/Xilinx/Vivado/2022.2/settings64.sh ]; then

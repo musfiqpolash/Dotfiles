@@ -68,8 +68,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = JetBrainsMono Nerd Font:size=10:weight=medium;3
-font-1 = JetBrainsMono Nerd Font:size=11:weight=bold;31
+font-0 = Hack Nerd Font:size=10:weight=medium;3
+font-1 = Hack Nerd Font:size=11:weight=bold;31
+font-2 = Hack Nerd Font:size=14:weight=bold;31
 
 modules-left = bspwm i3 xwindow
 modules-center = 
@@ -119,8 +120,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = JetBrainsMono Nerd Font:size=10:weight=medium;3
-font-1 = JetBrainsMono Nerd Font:size=11:weight=bold;3
+font-0 = Hack Nerd Font:size=10:weight=medium;3
+font-1 = Hack Nerd Font:size=11:weight=bold;3
+font-2 = Hack Nerd Font:size=14:weight=bold;3
 
 modules-left = bspwm i3 xwindow
 modules-center = 
@@ -169,7 +171,6 @@ type = internal/fs
 interval = 25
 
 mount-0 = /
-mount-1 = /home
 cursor-click = exec thunar &
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %free%
 label-unmounted = %mountpoint% not mounted
@@ -180,24 +181,25 @@ label-unmounted-foreground = ${colors.foreground-alt}
 [module/bspwm]
 type = internal/bspwm
 format = <label-state> <label-mode>
-label-focused = " %icon% "
-label-focused-foreground = ${colors.red}
-label-occupied = " %icon% "
-label-occupied-foreground = ${colors.data}
-;label-occupied = 
-label-empty = "  "
-label-empty-foreground = ${colors.data}
-label-urgent = 
 
-label-focused-padding   = 0
-label-empty-padding     = 0
-label-occupied-padding  = 0
-label-urgent-padding    = 0
+label-focused = %name%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
 
-label-focused-font      = 2
-label-empty-font        = 2
-label-occupied-font     = 2
-label-urgent-font       = 2
+label-occupied = %name%
+label-occupied-padding = 2
+
+label-urgent = %name%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %name%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+; Separator in between workspaces
+; label-separator = |
 
 pin-workspaces = true
 inline-mode = true
@@ -205,18 +207,6 @@ enable-click = true
 enable-scroll = true
 reverse-scroll = true
 
-ws-icon-1 = I;1 爵
-ws-icon-2 = II;2 
-ws-icon-3 = III;3 
-ws-icon-4 = IV;4 
-ws-icon-5 = V;5 
-ws-icon-6 = VI;6 
-ws-icon-7 = VII;7 
-ws-icon-8 = VIII;8 
-ws-icon-9 = IX;9 
-ws-icon-0 = X;10 
-ws-icon-default = 0
-;           
 
 [module/i3]
 type = internal/i3
@@ -259,18 +249,18 @@ label-urgent-padding = 2
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
+;format-prefix = "  "
+;format-prefix-foreground = ${colors.info}
 format-underline = #f90000
-label = CPU : %percentage:2%%
+label =  :%percentage:2%%
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
+;format-prefix = " "
+;format-prefix-foreground = ${colors.info}
 format-underline = #4bffdc
-label = RAM : %percentage_used%%
+label = 󰘚 : %percentage_used%%
 
 [module/wlan]
 type = internal/network
@@ -287,12 +277,12 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground-alt}
+ramp-signal-0 = 󰤯
+ramp-signal-1 = 󰤟
+ramp-signal-2 = 󰤢
+ramp-signal-3 = 󰤥
+ramp-signal-4 = 󰤨
+ramp-signal-foreground = ${colors.info}
 
 [module/eth]
 type = internal/network
@@ -300,9 +290,9 @@ interface = enp3s0
 interval = 3.0
 
 format-connected-underline = #55aa55
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = D :%downspeed:9% U: %upspeed:9%
+format-connected-prefix = "󰈁 "
+format-connected-prefix-foreground = ${colors.info}
+label-connected = 󰇚:%downspeed:2% 󰕒:%upspeed:2%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -320,8 +310,8 @@ date-alt = " %Y-%m-%d"
 time = %H:%M:%S
 time-alt = %H:%M:%S
 
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = 󰥔
+format-prefix-foreground = ${colors.info}
 format-underline = #0a6cf5
 
 label = %date% %time%
@@ -336,14 +326,14 @@ format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
-label = TEMP : %temperature-c%
+label = : %temperature-c%
 label-warn = TEMP : %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.info}
 
 [module/update]
 ;apt-get dist-upgrade -s --quiet=2 | grep ^Inst | wc -l

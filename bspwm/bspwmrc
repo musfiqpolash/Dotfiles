@@ -1,21 +1,27 @@
 #! /bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
+killall volumeicon
 
-xrandr --output HDMI-1 --auto --above eDP-1
-picom glx --vsync &
+xrandr --output eDP-1 --primary --auto --output HDMI-1 --auto --above eDP-1
+# xrandr --output HDMI-1 --auto --above eDP-1 --primary
+picom --backend glx --vsync -b &
 nitrogen --restore &
 nm-applet &
 volumeicon &
 blueman-applet &
-# $HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh
 
-bspc monitor 'eDP-1' -d I II III IV V
+xset s 300 5
+xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock
 
-bspc monitor 'HDMI-1' -d  VI VII VIII IX X
+
+bspc monitor eDP-1 -d 1 2 3 4
+
+bspc monitor HDMI-1 -d  5 6 7 8
 
 bspc config border_width         2
-bspc config window_gap          12
+bspc config window_gap           8
 
 bspc config single_monocle                false
 bspc config click_to_focus                true
