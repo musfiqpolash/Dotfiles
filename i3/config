@@ -193,11 +193,13 @@ for_window [class="^.*"] border pixel 1
 bindsym $mod+b exec firefox 
 bindsym $mod+Shift+f exec pcmanfm
 bindsym $mod+m exec $term -e mc
+bindsym Mod1+f exec krusader
+bindsym Mod1+d exec /home/polash/.local/lib/doublecmd/doublecmd
 
 bindsym $mod+x exec $HOME/.config/scripts/powermenu.sh
 bindsym $mod+p exec ~/.config/polybar/launch.sh
 bindsym $mod+z exec emacsclient -c -a 'emacs'
-bindsym $mod+l exec --no-startup-id i3lock --nofork -i /home/polash/Pictures/Lock/wp7.png -t
+bindsym $mod+l exec --no-startup-id i3lock --nofork -i /home/polash/Dotfiles/background/5_copy.png -t
 bindsym $mod+shift+a exec --no-startup-id /home/polash/Applications/arduino-ide.AppImage
 bindsym $mod+shift+v exec --no-startup-id code
 #bindsym --release Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures/ScreenShot/'

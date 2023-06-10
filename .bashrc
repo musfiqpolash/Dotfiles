@@ -197,4 +197,8 @@ if [ -e /home/polash/.nix-profile/etc/profile.d/nix.sh ]; then
   . /home/polash/.nix-profile/etc/profile.d/nix.sh;
 fi # added by Nix installer
 
+PATH="/home/polash/.local/lib/doublecmd/:$PATH"
+
+export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
 eval "$(starship init bash)"
