@@ -140,7 +140,7 @@ alias fgrep='fgrep --color=auto'
 alias gc='git clone'
 alias emacs="emacsclient -c -a 'emacs'"
 
-alias ins="sudo apt install"
+alias ins="sudo nala install"
 alias upd="sudo apt update"
 alias upg="sudo apt upgrade"
 alias reboot="systemctl reboot"
