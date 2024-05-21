@@ -11,6 +11,7 @@ ln -sf $HOME/Dotfiles/scripts $HOME/.config
 ln -sf $HOME/Dotfiles/alacritty $HOME/.config
 ln -sf $HOME/Dotfiles/bspwm $HOME/.config
 ln -sf $HOME/Dotfiles/sxhkd $HOME/.config
+ln -sf $HOME/Dotfiles/tmux $HOME/.config
 ln -sf $HOME/Dotfiles/.bash* $HOME/
 ln -sf $HOME/Dotfiles/.vimrc $HOME/
 

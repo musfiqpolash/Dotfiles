@@ -16,11 +16,11 @@ alias fgrep='fgrep --color=auto'
 
 alias gc='git clone'
 
-alias ins='sudo apt install'
-alias upd="sudo apt update"
-alias upg="sudo apt upgrade -y"
 alias reboot="systemctl reboot"
 alias shutdown="systemctl poweroff"
+
+alias f='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
+alias sb='source ~/.bashrc'
 
 alias cnvim="cd $HOME/.config/nvim && nvim"
 
